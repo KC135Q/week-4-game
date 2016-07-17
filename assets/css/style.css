@@ -3,3 +3,23 @@ body {
 	background-repeat: no-repeat;
 	background-size: 100%;
 }
+.container {
+	border: 3px solid #333;
+}
+.driver {
+	background-color: rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+	color: white;
+	padding: 5px 15px;
+	text-align: center;
+}
+.points, .name {
+	clear: both;
+	display: block;
+	margin: 5px;
+}
+.drivers {
+	color: white;
+	font-size: larger;
+	text-align: center;
+}
