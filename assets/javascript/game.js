@@ -17,7 +17,7 @@ $(document).ready(function() {
 	}
 
 	function showDriverPool() {
-		$('.drivers').empty();
+		$('#drivers').empty();
 		for (ctr = 0; ctr < drivers.length; ctr++) {
 			// Check to see if they have been selected to play first
 			// Will also need to check if they have been eliminated
@@ -27,7 +27,7 @@ $(document).ready(function() {
 					.attr('driver-id', ctr)
 					.html('<span class="name">'+ drivers[ctr].name +'</span><img src="assets/images/'+ drivers[ctr].image +'"><span class="points">'+ drivers[ctr].health +'</span>');
 					// $newDriver.on('click', selectDriver(ctr));
-				$('.drivers').append($newDriver);				
+				$('#drivers').append($newDriver);				
 			}
 		}
 		$('.driver').on('click', function() {
@@ -49,15 +49,18 @@ $(document).ready(function() {
 			.html('<span class="name">'+ drivers[index].name +'</span><img src="assets/images/'+ drivers[index].image +'"><span class="points">'+ drivers[index].health +'</span>');
 		$('#opponent').html($newOpponent);
 		$('#opponent-header').html('Opponent');
+		$('#versus').html('<img src="assets/images/gas.png"><h3>Go!<h3>');		
 	}
 	function refreshDisplay () {
 		console.log("Player: " + player + ", Opponent: " + opponent);
 		showDriverPool();
 		if (player != -1) {
 			showPlayer(player);
+			$('#action').html("Select your opponent");
 		}
 		if (opponent != -1) {
 			showOpponent(opponent);
+			$('#action').html("Start your engines!");
 		}
 	}
 

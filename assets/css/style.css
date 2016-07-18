@@ -5,7 +5,6 @@ body {
 	background-size: 100%;
 }
 .container {
-
 }
 .driver, .opponent, .player {
 	border-radius: 5px;
@@ -22,7 +21,7 @@ body {
 .player {
 	background-color: rgba(0, 255, 0, 0.3);
 }
-.drivers, .action, #player-header, #opponent-header {
+#drivers, #action, #player-header, #opponent-header {
 	color: white;
 	font-size: larger;
 	text-align: center;
@@ -37,4 +36,9 @@ body {
 }
 .row {
 	margin: 15px;
+}
+h3 {
+	color: white;
+	size: xx-large;
+	text-align: center;
 }
