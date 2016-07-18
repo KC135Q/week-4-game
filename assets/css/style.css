@@ -5,7 +5,7 @@ body {
 	background-size: 100%;
 }
 .container {
-	border-bottom: 1px solid #333;
+
 }
 .driver, .opponent, .player {
 	border-radius: 5px;
@@ -22,12 +22,12 @@ body {
 .player {
 	background-color: rgba(0, 255, 0, 0.3);
 }
-.drivers, .action, .player-header, .opponent-header {
+.drivers, .action, #player-header, #opponent-header {
 	color: white;
 	font-size: larger;
 	text-align: center;
 }
-.player-header, .opponent-header {
+#player-header, #opponent-header {
 	font-size: x-large;
 }
 .points, .name {
