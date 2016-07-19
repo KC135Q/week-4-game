@@ -6,13 +6,13 @@ body {
 }
 .container {
 }
-.driver, .opponent, .player {
+.driver, .opponent, .player, .lostDriver {
 	border-radius: 5px;
 	color: white;
 	padding: 5px 15px;
 	text-align: center;
 }
-.driver {
+.driver, .lostDriver {
 	background-color: rgba(0, 0, 0, 0.3);	
 }
 .opponent {
@@ -21,7 +21,7 @@ body {
 .player {
 	background-color: rgba(0, 255, 0, 0.3);
 }
-#drivers, #action, #player-header, #opponent-header {
+#drivers, #action, #player-header, #opponent-header, #pits-header {
 	color: white;
 	font-size: larger;
 	text-align: center;
@@ -40,5 +40,13 @@ body {
 h3 {
 	color: white;
 	size: xx-large;
+	text-align: center;
+}
+#race h2 {
+	background-color: rgba(0, 0, 0, 0.3);
+	border-radius: 15px;
+	color: white;
+	font-size: xx-large;
+	padding: 25px;
 	text-align: center;
 }
